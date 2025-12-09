@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role Playing Game - OOPサンプル</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚔️ Role Playing Game ⚔️</h1>
+        
+        <!-- キャラクター選択画面 -->
+        <div id="characterSelection" class="screen active">
+            <h2>職業を選択してください</h2>
+            <div class="character-buttons">
+                <button class="character-btn" onclick="game.selectCharacter('warrior')">
+                    <div class="character-icon">🛡️</div>
+                    <div class="character-name">戦士</div>
+                    <div class="character-stats">HP: 120 / 攻撃: 20</div>
+                </button>
+                <button class="character-btn" onclick="game.selectCharacter('mage')">
+                    <div class="character-icon">🔮</div>
+                    <div class="character-name">魔法使い</div>
+                    <div class="character-stats">HP: 80 / 魔力: 30</div>
+                </button>
+                <button class="character-btn" onclick="game.selectCharacter('thief')">
+                    <div class="character-icon">🗡️</div>
+                    <div class="character-name">盗賊</div>
+                    <div class="character-stats">HP: 90 / 攻撃: 18</div>
+                </button>
+            </div>
+        </div>
+        
+        <!-- 戦闘画面 -->
+        <div id="battleScreen" class="screen">
+            <div class="battle-field">
+                <div class="character-panel player-panel">
+                    <div class="character-display">
+                        <div id="playerIcon" class="character-icon-large">🛡️</div>
+                        <div id="playerName" class="character-name">勇者</div>
+                        <div class="stats">
+                            <div class="stat">HP: <span id="playerHp">120</span>/<span id="playerMaxHp">120</span></div>
+                            <div class="stat">Lv: <span id="playerLevel">1</span></div>
+                            <div class="stat">Exp: <span id="playerExp">0</span></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="vs">VS</div>
+                
+                <div class="character-panel enemy-panel">
+                    <div class="character-display">
+                        <div id="enemyIcon" class="character-icon-large">👾</div>
+                        <div id="enemyName" class="character-name">スライム</div>
+                        <div class="stats">
+                            <div class="stat">HP: <span id="enemyHp">30</span>/<span id="enemyMaxHp">30</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <button class="action-btn" onclick="game.playerAttack()">攻撃</button>
+                <button class="action-btn special" onclick="game.playerSpecialAbility()">必殺技</button>
+            </div>
+            
+            <div class="log-container">
+                <div id="battleLog" class="battle-log"></div>
+            </div>
+        </div>
+        
+        <!-- 結果画面 -->
+        <div id="resultScreen" class="screen">
+            <h2 id="resultTitle">勝利！</h2>
+            <div id="resultMessage" class="result-message"></div>
+            <button class="action-btn" onclick="game.nextBattle()">次の戦闘</button>
+            <button class="action-btn" onclick="game.restart()">最初から</button>
+        </div>
+    </div>
+    
+    <script src="rpg.js"></script>
+</body>
+</html>
