@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アナログ時計 - OOPサンプル</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>アナログ時計</h1>
+        <div class="clock-container">
+            <canvas id="clockCanvas" width="400" height="400"></canvas>
+        </div>
+        <div class="info">
+            <p id="timeDisplay">--:--:--</p>
+            <p id="angleDisplay">
+                時針: --°<br>
+                分針: --°<br>
+                秒針: --°
+            </p>
+        </div>
+    </div>
+    <script src="clock.js"></script>
+</body>
+</html>
