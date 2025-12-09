@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お絵描きアプリ - OOPサンプル</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>お絵描きアプリ</h1>
+        
+        <div class="toolbar">
+            <div class="tool-group">
+                <span class="group-label">ツール:</span>
+                <button id="penBtn" class="tool-btn active">ペン</button>
+                <button id="lineBtn" class="tool-btn">直線</button>
+                <button id="circleBtn" class="tool-btn">円</button>
+                <button id="rectangleBtn" class="tool-btn">四角形</button>
+            </div>
+            
+            <div class="tool-group">
+                <span class="group-label">色:</span>
+                <input type="color" id="colorPicker" value="#000000">
+            </div>
+            
+            <div class="tool-group">
+                <span class="group-label">太さ:</span>
+                <input type="range" id="lineWidth" min="1" max="10" value="2">
+                <span id="lineWidthValue">2</span>
+            </div>
+            
+            <div class="tool-group">
+                <button id="clearBtn" class="action-btn">全消去</button>
+                <button id="undoBtn" class="action-btn">元に戻す</button>
+                <button id="redoBtn" class="action-btn">やり直し</button>
+            </div>
+        </div>
+        
+        <div class="canvas-container">
+            <canvas id="drawingCanvas" width="800" height="600"></canvas>
+        </div>
+        
+        <div class="info">
+            <p>選択中のツール: <span id="currentTool">ペン</span></p>
+        </div>
+    </div>
+    
+    <script src="drawing.js"></script>
+</body>
+</html>

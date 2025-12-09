@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>図書管理システム - OOPサンプル</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>図書管理システム</h1>
+        
+        <div class="main-content">
+            <div class="panel">
+                <h2>蔵書一覧</h2>
+                <div id="booksList" class="list"></div>
+            </div>
+            
+            <div class="panel">
+                <h2>操作</h2>
+                <div class="actions">
+                    <input type="text" id="searchInput" placeholder="書籍を検索...">
+                    <button id="searchBtn">検索</button>
+                </div>
+                <div id="resultsList" class="list"></div>
+            </div>
+        </div>
+    </div>
+    <script src="library.js"></script>
+</body>
+</html>
