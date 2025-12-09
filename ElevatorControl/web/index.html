@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>エレベーター制御 - OOPサンプル</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>エレベーター制御システム</h1>
+        
+        <div class="elevator-display">
+            <div class="elevator-shaft">
+                <div id="elevator" class="elevator">
+                    <div class="elevator-info">
+                        <div id="currentFloor">1F</div>
+                        <div id="direction">↕</div>
+                        <div id="doorStatus">🚪</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="floor-buttons">
+                <h3>階を選択</h3>
+                <div id="floorButtons" class="buttons-grid"></div>
+            </div>
+        </div>
+        
+        <div class="status-panel">
+            <h3>ステータス</h3>
+            <div id="statusDisplay"></div>
+        </div>
+    </div>
+    <script src="elevator.js"></script>
+</body>
+</html>
