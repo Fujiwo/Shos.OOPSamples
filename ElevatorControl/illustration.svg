@@ -1,0 +1,69 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Building structure -->
+  <rect x="50" y="20" width="300" height="260" fill="#bdc3c7" stroke="#95a5a6" stroke-width="3"/>
+  
+  <!-- Floor dividers -->
+  <line x1="50" y1="85" x2="350" y2="85" stroke="#7f8c8d" stroke-width="2"/>
+  <line x1="50" y1="150" x2="350" y2="150" stroke="#7f8c8d" stroke-width="2"/>
+  <line x1="50" y1="215" x2="350" y2="215" stroke="#7f8c8d" stroke-width="2"/>
+  
+  <!-- Floor labels -->
+  <text x="30" y="60" font-family="Arial, sans-serif" font-size="18" fill="#2c3e50" text-anchor="middle" font-weight="bold">4F</text>
+  <text x="30" y="125" font-family="Arial, sans-serif" font-size="18" fill="#2c3e50" text-anchor="middle" font-weight="bold">3F</text>
+  <text x="30" y="190" font-family="Arial, sans-serif" font-size="18" fill="#2c3e50" text-anchor="middle" font-weight="bold">2F</text>
+  <text x="30" y="255" font-family="Arial, sans-serif" font-size="18" fill="#2c3e50" text-anchor="middle" font-weight="bold">1F</text>
+  
+  <!-- Elevator shaft -->
+  <rect x="160" y="20" width="80" height="260" fill="#34495e" stroke="#2c3e50" stroke-width="3"/>
+  
+  <!-- Elevator car at 3F -->
+  <rect x="165" y="92" width="70" height="55" fill="#ecf0f1" stroke="#95a5a6" stroke-width="2"/>
+  
+  <!-- Elevator door -->
+  <rect x="170" y="97" width="28" height="45" fill="#7f8c8d" stroke="#5d6d7e" stroke-width="1"/>
+  <rect x="202" y="97" width="28" height="45" fill="#7f8c8d" stroke="#5d6d7e" stroke-width="1"/>
+  <line x1="198" y1="97" x2="198" y2="142" stroke="#5d6d7e" stroke-width="2"/>
+  <line x1="202" y1="97" x2="202" y2="142" stroke="#5d6d7e" stroke-width="2"/>
+  
+  <!-- Elevator display showing floor -->
+  <rect x="190" y="85" width="20" height="15" fill="#2c3e50" stroke="#1a252f" stroke-width="1"/>
+  <text x="200" y="96" font-family="monospace" font-size="12" fill="#2ecc71" text-anchor="middle" font-weight="bold">3</text>
+  
+  <!-- Direction indicator (up arrow) -->
+  <polygon points="200,75 205,82 195,82" fill="#f39c12"/>
+  
+  <!-- Call buttons on floors -->
+  <!-- 4F buttons -->
+  <rect x="270" y="45" width="20" height="15" rx="2" fill="#3498db" stroke="#2980b9" stroke-width="1"/>
+  <polygon points="280,50 275,57 285,57" fill="#fff"/>
+  <rect x="295" y="45" width="20" height="15" rx="2" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <polygon points="305,57 300,50 310,50" fill="#7f8c8d"/>
+  
+  <!-- 3F buttons -->
+  <rect x="270" y="110" width="20" height="15" rx="2" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <polygon points="280,115 275,122 285,122" fill="#7f8c8d"/>
+  <rect x="295" y="110" width="20" height="15" rx="2" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <polygon points="305,122 300,115 310,115" fill="#7f8c8d"/>
+  
+  <!-- 2F buttons -->
+  <rect x="270" y="175" width="20" height="15" rx="2" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <polygon points="280,180 275,187 285,187" fill="#7f8c8d"/>
+  <rect x="295" y="175" width="20" height="15" rx="2" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
+  <polygon points="305,187 300,180 310,180" fill="#fff"/>
+  
+  <!-- 1F buttons -->
+  <rect x="270" y="240" width="20" height="15" rx="2" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <polygon points="280,245 275,252 285,252" fill="#7f8c8d"/>
+  <rect x="295" y="240" width="20" height="15" rx="2" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1"/>
+  <polygon points="305,252 300,245 310,245" fill="#7f8c8d"/>
+  
+  <!-- Control panel inside elevator -->
+  <rect x="220" y="115" width="10" height="25" rx="1" fill="#34495e" stroke="#2c3e50" stroke-width="1"/>
+  <circle cx="225" cy="120" r="1.5" fill="#e74c3c"/>
+  <circle cx="225" cy="125" r="1.5" fill="#ecf0f1"/>
+  <circle cx="225" cy="130" r="1.5" fill="#ecf0f1"/>
+  <circle cx="225" cy="135" r="1.5" fill="#ecf0f1"/>
+  
+  <!-- Cable representation -->
+  <line x1="200" y1="20" x2="200" y2="92" stroke="#7f8c8d" stroke-width="2" stroke-dasharray="4,4"/>
+</svg>
