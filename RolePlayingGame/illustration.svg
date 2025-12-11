@@ -1,0 +1,55 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87ceeb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4682b4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyGradient)"/>
+  
+  <!-- Ground -->
+  <rect x="0" y="240" width="400" height="60" fill="#8b7355"/>
+  
+  <!-- Castle (enemy location) -->
+  <rect x="280" y="160" width="80" height="80" fill="#696969" stroke="#2c3e50" stroke-width="2"/>
+  <polygon points="280,160 320,130 360,160" fill="#8b0000" stroke="#2c3e50" stroke-width="2"/>
+  <rect x="305" y="200" width="30" height="40" fill="#4a4a4a"/>
+  
+  <!-- Enemy character (dragon-like) -->
+  <ellipse cx="240" cy="200" rx="25" ry="20" fill="#c0392b" stroke="#922b21" stroke-width="2"/>
+  <circle cx="230" cy="195" r="3" fill="#fff"/>
+  <circle cx="250" cy="195" r="3" fill="#fff"/>
+  <path d="M 220 185 L 215 175 L 220 180 Z" fill="#c0392b" stroke="#922b21" stroke-width="1"/>
+  <path d="M 260 185 L 265 175 L 260 180 Z" fill="#c0392b" stroke="#922b21" stroke-width="1"/>
+  
+  <!-- Player character (warrior) -->
+  <circle cx="100" cy="190" r="20" fill="#f39c12" stroke="#d68910" stroke-width="2"/>
+  <rect x="90" y="210" width="20" height="30" fill="#3498db" stroke="#2874a6" stroke-width="2"/>
+  <line x1="90" y1="220" x2="70" y2="225" stroke="#95a5a6" stroke-width="3" stroke-linecap="round"/>
+  <line x1="110" y1="220" x2="130" y2="215" stroke="#95a5a6" stroke-width="3" stroke-linecap="round"/>
+  <line x1="90" y1="240" x2="85" y2="260" stroke="#2c3e50" stroke-width="3" stroke-linecap="round"/>
+  <line x1="110" y1="240" x2="115" y2="260" stroke="#2c3e50" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Sword -->
+  <line x1="130" y1="215" x2="150" y2="195" stroke="#bdc3c7" stroke-width="4" stroke-linecap="round"/>
+  <rect x="148" y="190" width="8" height="8" fill="#f39c12" stroke="#d68910" stroke-width="1"/>
+  
+  <!-- Health bars -->
+  <!-- Player health -->
+  <rect x="60" y="150" width="80" height="12" fill="#34495e" stroke="#2c3e50" stroke-width="1" rx="2"/>
+  <rect x="62" y="152" width="60" height="8" fill="#27ae60" rx="1"/>
+  <text x="100" y="147" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">HP</text>
+  
+  <!-- Enemy health -->
+  <rect x="200" y="150" width="80" height="12" fill="#34495e" stroke="#2c3e50" stroke-width="1" rx="2"/>
+  <rect x="202" y="152" width="50" height="8" fill="#e74c3c" rx="1"/>
+  <text x="240" y="147" font-family="Arial, sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">HP</text>
+  
+  <!-- Battle effects -->
+  <text x="160" y="180" font-family="Arial, sans-serif" font-size="24" fill="#e67e22" text-anchor="middle" font-weight="bold">⚔</text>
+  
+  <!-- Level indicator -->
+  <text x="100" y="130" font-family="Arial, sans-serif" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">Lv.5 勇者</text>
+  <text x="240" y="130" font-family="Arial, sans-serif" font-size="12" fill="#fff" text-anchor="middle" font-weight="bold">Lv.8 ドラゴン</text>
+</svg>

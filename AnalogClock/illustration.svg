@@ -1,0 +1,33 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Clock face background -->
+  <circle cx="200" cy="150" r="120" fill="#f8f9fa" stroke="#2c3e50" stroke-width="4"/>
+  
+  <!-- Hour marks -->
+  <line x1="200" y1="40" x2="200" y2="55" stroke="#2c3e50" stroke-width="3"/>
+  <line x1="290" y1="80" x2="280" y2="91" stroke="#2c3e50" stroke-width="3"/>
+  <line x1="310" y1="150" x2="295" y2="150" stroke="#2c3e50" stroke-width="3"/>
+  <line x1="290" y1="220" x2="280" y2="209" stroke="#2c3e50" stroke-width="3"/>
+  <line x1="200" y1="260" x2="200" y2="245" stroke="#2c3e50" stroke-width="3"/>
+  <line x1="110" y1="220" x2="120" y2="209" stroke="#2c3e50" stroke-width="3"/>
+  <line x1="90" y1="150" x2="105" y2="150" stroke="#2c3e50" stroke-width="3"/>
+  <line x1="110" y1="80" x2="120" y2="91" stroke="#2c3e50" stroke-width="3"/>
+  
+  <!-- Hour numbers -->
+  <text x="200" y="55" font-family="Arial, sans-serif" font-size="18" fill="#2c3e50" text-anchor="middle" font-weight="bold">12</text>
+  <text x="267" y="100" font-family="Arial, sans-serif" font-size="18" fill="#2c3e50" text-anchor="middle" font-weight="bold">3</text>
+  <text x="200" y="253" font-family="Arial, sans-serif" font-size="18" fill="#2c3e50" text-anchor="middle" font-weight="bold">6</text>
+  <text x="133" y="100" font-family="Arial, sans-serif" font-size="18" fill="#2c3e50" text-anchor="middle" font-weight="bold">9</text>
+  
+  <!-- Clock hands -->
+  <!-- Hour hand (pointing to 10) -->
+  <line x1="200" y1="150" x2="160" y2="100" stroke="#34495e" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Minute hand (pointing to 2) -->
+  <line x1="200" y1="150" x2="255" y2="95" stroke="#7f8c8d" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Second hand (pointing to 6) -->
+  <line x1="200" y1="150" x2="200" y2="230" stroke="#e74c3c" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Center dot -->
+  <circle cx="200" cy="150" r="8" fill="#2c3e50"/>
+</svg>
