@@ -1,5 +1,7 @@
 # Role Playing Game - 問題
 
+![RPGイラスト](illustration.svg)
+
 ## 問題1: RPGのクラス設計
 
 シンプルなRole Playing Game（RPG）を作成します。以下の要件を満たすクラス設計を考えてください。
